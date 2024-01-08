@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* Existing Styles */
+    
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #95a3b1;
+            margin: auto;
+            width: 75%;          
+            box-sizing: border-box;
+        }
+    
+        header {
+            background-color: #36454F;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            font-size: 40px;
+            min-width: 385px;
+        }
+
+        header h1{
+            margin: 0;
+        }
+    
+        nav {
+            text-align: left;
+            background-color: #0096FF;
+            padding: 1em;
+            min-width: 403px;
+            border-radius:0 0 10px 10px ;
+        }
+    
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            margin: 1em;
+            font-size: 20px;
+        }
+    
+        section {
+            padding: 10px;
+            margin: 20px;
+            background-color: #E5E4E2;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        h2 {
+            color: #0096FF;
+            text-align: center;
+            font-size: 40px;
+        }
+    
+        h3 {
+            font-size: 25px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0px;
+        }
+    
+        h4 {
+            position: relative;
+            left: 10px;
+            top: 0px;
+        }
+    
+        h5 {
+            display: block;
+            font-size: 15px;
+        }
+        h6{
+            position: relative;
+            left: 10px;
+            top: 0px;
+        }
+        .img2,
+        .img3,
+        .img4 {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px 0px; 
+        }
+        .img1 {
+            display: inline;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin:0;
+            margin-left: 30px;
+            margin-bottom: 15px;
+            
+        }
+
+        #about,
+        #portfolio{
+            min-width: 380px;
+        }
+        .grid {
+            margin-bottom: 3rem;
+            display: grid;
+            grid-template-columns:repeat( auto-fit, minmax(300px, 1fr));
+            justify-content: center;   
+        }
+        .grid-item {
+            flex: 1 0 300px;
+            text-align: center; /* จัดกลางในแนวตั้ง */
+            margin: 10px; /* กำหนดระยะห่างรอบๆ grid-item */
+        }
+
+        #out,
+        #ab {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+            margin-left: 30px;
+            width: 100%; 
+            max-width: 300px;
+            margin-bottom: 15px;
+        }
+    
+
+        
+        @media (min-width: 600px) {
+            .grid { grid-template-columns: repeat(2, 1fr); }
+        }   
+        @media (min-width: 1100px) {
+            .grid { grid-template-columns: repeat(3, 1fr); }
+        }  
+        .nig {
+            display: inline-block;
+            vertical-align: top;
+            margin: auto;
+            width: 380px;
+        }
+        @media (max-width: 1300px){
+            .nig { display: block;
+            width: 720px;}
+            .img1 { margin: auto;
+            display: block;
+            height: auto;
+            margin-bottom: 15px;}
+        }
+        @media (max-width: 1050px){
+            .nig { display: block;
+            width: 380px;
+            margin: auto;}
+        }
+    </style>
+    
+
+</head>
+<body>
+
+    <header>
+        <h1>Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#about">ประวัติ</a>
+        <a href="#portfolio">ผลงานกิจกรรม</a>
+    </nav>
+
+    <section id="about">
+        <h2>ประวัติ</h2>
+        <img class="img1" src="/am/111.png" alt="111" width="500" height="650" >
+        
+        <div class="nig">
+        <section id="out">
+        <h3>ประวัติส่วนตัว</h3>
+        <h5>ชื่อ - สกุล : ธีีพงศ์ นิลมณี
+            <br>
+            <br>
+            ชื่อเล่น : ธี
+            <br>
+            <br>
+            วัน-เดือน-ปีเกิด : 11 มีนาคม 2549
+            <br>
+            <br>
+            อายุ : 17 ปี
+            <br>
+            <br>
+            สัญชาติ : ไทย
+            <br>
+            <br>
+            เชื้อชาติ : ไทย</h5>
+        </section>       
+        <section id="ab">
+            <h3> ข้อมูลการติดต่อ </h3>
+            <h5>โทร : 089-741-9885
+                <br>
+                <br>
+                อีเมล : Teelol456@gmail.com
+                <br>
+                <br>
+                FB : Teerapong Ninmanee
+                <br>
+                <br>
+                Line : Teeco01
+                <br>
+                <br>
+                <h3>ที่อยู่</h3>
+                <h5>100/77 หมู่บ้านช้าง หมู่1
+                    <br>
+                    ตำบลแคราย อำเภอ กระทุ่มแบน จ.สมุทรสาคร</h5>
+                </h5>
+        </section>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>ผลงานกิจกรรม</h2>
+        <div class="grid">
+            <div class="grid-item">
+            <img class="img2" src="/am/222.jpg" alt="212" width="250" height="200">
+            <h4>เข้ารวมโครงการ แข่งขันโอลิมปิกหุ่นยนต์ 2023</h4>
+            <h4>(WORLD ROBOT OLYMPIAD 2023)</h4>
+            </div>
+
+            <div class="grid-item">
+            <img class="img3" src="/am/212.png" alt="222" width="250" height="200">
+            <h4>ได้เรียนและฝึกทำโจทย์ใน DevLab</h4>
+            </div>
+
+            <div class="grid-item">
+            <img class="img4" src="/am/333.jpg" alt="222" width="250" height="200">
+            <h4>ได้เป็นคนจัดกิจกรรมวันคณิตศาสตร์</h4>
+            </div>
+
+            <div class="grid-item">
+            <img class="img4" src="/am/444.jpg" alt="222" width="250" height="200">
+            <h4>เข้ารวมกิจกรรมเปิดบ้าน มหาวิทยาลัยเกษตรศาสตร์</h4>
+            </div>
+
+            <div class="grid-item">
+            <img class="img4" src="/am/555.JPG" alt="222" width="250" height="200">
+            <h4>เข้ารวมค่ายเปิดรั้วนนทรี ครั้งที่ 19 </h4>
+            </div>
+     </section>
+</body>
+</html>
